@@ -1,0 +1,40 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2025 21:33:55] "[31m[1mPOST /post HTTP/1.1[0m" 400 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2025 21:34:27] "[31m[1mPOST /post HTTP/1.1[0m" 400 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2025 21:34:37] "[31m[1mPOST /post HTTP/1.1[0m" 400 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2025 21:34:54] "[31m[1mPOST /post HTTP/1.1[0m" 400 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:root:Request: {'request': {'command': 'закажи пиццу на улицу льва толстого, 16 на завтра', 'original_utterance': 'закажи пиццу на улицу льва толстого, 16 на завтра'}, 'session': {'new': True, 'message_id': 4, 'session_id': '2eac4854-fce721f3-b845abba-20d60', 'skill_id': '3ad36498-f5rd-4079-a14b-788652932056', 'user_id': 'AC9WC3DF6FCE052E45A4566A48E6B7193774B84814CE49A922E163B8B29881DC'}, 'version': '1.0'}
+INFO:root:Response: {'session': {'new': True, 'message_id': 4, 'session_id': '2eac4854-fce721f3-b845abba-20d60', 'skill_id': '3ad36498-f5rd-4079-a14b-788652932056', 'user_id': 'AC9WC3DF6FCE052E45A4566A48E6B7193774B84814CE49A922E163B8B29881DC'}, 'version': '1.0', 'response': {'end_session': False, 'text': 'Привет! Купи слона!', 'buttons': [{'title': 'Не хочу.', 'hide': True}, {'title': 'Не буду', 'hide': True}]}}
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2025 21:38:13] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:root:Request: {'request': {'command': 'закажи пиццу на улицу льва толстого, 16 на завтра', 'original_utterance': 'закажи пиццу на улицу льва толстого, 16 на завтра'}, 'session': {'new': True, 'message_id': 4, 'session_id': '2eac4854-fce721f3-b845abba-20d60', 'skill_id': '3ad36498-f5rd-4079-a14b-788652932056', 'user_id': 'AC9WC3DF6FCE052E45A4566A48E6B7193774B84814CE49A922E163B8B29881DC'}, 'version': '1.0'}
+INFO:root:Response: {'session': {'new': True, 'message_id': 4, 'session_id': '2eac4854-fce721f3-b845abba-20d60', 'skill_id': '3ad36498-f5rd-4079-a14b-788652932056', 'user_id': 'AC9WC3DF6FCE052E45A4566A48E6B7193774B84814CE49A922E163B8B29881DC'}, 'version': '1.0', 'response': {'end_session': False, 'text': 'Привет! Купи слона!', 'buttons': [{'title': 'Не хочу.', 'hide': True}, {'title': 'Не буду', 'hide': True}]}}
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2025 21:38:47] "POST /post HTTP/1.1" 200 -
+INFO:root:Request: {'request': {'command': 'закажи пиццу на улицу льва толстого, 16 на завтра', 'original_utterance': 'закажи пиццу на улицу льва толстого, 16 на завтра'}, 'session': {'new': False, 'message_id': 4, 'session_id': '2eac4854-fce721f3-b845abba-20d60', 'skill_id': '3ad36498-f5rd-4079-a14b-788652932056', 'user_id': 'AC9WC3DF6FCE052E45A4566A48E6B7193774B84814CE49A922E163B8B29881DC'}, 'version': '1.0'}
+INFO:root:Response: {'session': {'new': False, 'message_id': 4, 'session_id': '2eac4854-fce721f3-b845abba-20d60', 'skill_id': '3ad36498-f5rd-4079-a14b-788652932056', 'user_id': 'AC9WC3DF6FCE052E45A4566A48E6B7193774B84814CE49A922E163B8B29881DC'}, 'version': '1.0', 'response': {'end_session': False, 'text': "Все говорят 'закажи пиццу на улицу льва толстого, 16 на завтра', а ты купи слона!", 'buttons': [{'title': 'Не буду', 'hide': True}, {'title': 'Отстань', 'hide': True}]}}
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2025 21:39:27] "POST /post HTTP/1.1" 200 -
+INFO:root:Request: {'request': {'command': 'закажи пиццу на улицу льва толстого, 16 на завтра', 'original_utterance': 'закажи пиццу на улицу льва толстого, 16 на завтра'}, 'session': {'new': False, 'message_id': 4, 'session_id': '2eac4854-fce721f3-b845abba-20d60', 'skill_id': '3ad36498-f5rd-4079-a14b-788652932056', 'user_id': 'AC9WC3DF6FCE052E45A4566A48E6B7193774B84814CE49A922E163B8B29881DC'}, 'version': '1.0'}
+INFO:root:Response: {'session': {'new': False, 'message_id': 4, 'session_id': '2eac4854-fce721f3-b845abba-20d60', 'skill_id': '3ad36498-f5rd-4079-a14b-788652932056', 'user_id': 'AC9WC3DF6FCE052E45A4566A48E6B7193774B84814CE49A922E163B8B29881DC'}, 'version': '1.0', 'response': {'end_session': False, 'text': "Все говорят 'закажи пиццу на улицу льва толстого, 16 на завтра', а ты купи слона!", 'buttons': [{'title': 'Отстань', 'hide': True}, {'title': 'Ладно', 'url': 'https://market.yandex.ru/search?text=слон', 'hide': True}]}}
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2025 21:39:35] "POST /post HTTP/1.1" 200 -
+INFO:root:Request: {'request': {'command': 'закажи пиццу на улицу льва толстого, 16 на завтра', 'original_utterance': 'закажи пиццу на улицу льва толстого, 16 на завтра'}, 'session': {'new': False, 'message_id': 4, 'session_id': '2eac4854-fce721f3-b845abba-20d60', 'skill_id': '3ad36498-f5rd-4079-a14b-788652932056', 'user_id': 'AC9WC3DF6FCE052E45A4566A48E6B7193774B84814CE49A922E163B8B29881DC'}, 'version': '1.0'}
+INFO:root:Response: {'session': {'new': False, 'message_id': 4, 'session_id': '2eac4854-fce721f3-b845abba-20d60', 'skill_id': '3ad36498-f5rd-4079-a14b-788652932056', 'user_id': 'AC9WC3DF6FCE052E45A4566A48E6B7193774B84814CE49A922E163B8B29881DC'}, 'version': '1.0', 'response': {'end_session': False, 'text': "Все говорят 'закажи пиццу на улицу льва толстого, 16 на завтра', а ты купи слона!", 'buttons': [{'title': 'Ладно', 'url': 'https://market.yandex.ru/search?text=слон', 'hide': True}]}}
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2025 21:39:38] "POST /post HTTP/1.1" 200 -
+INFO:root:Request: {'request': {'command': 'закажи пиццу на улицу льва толстого, 16 на завтра', 'original_utterance': 'закажи пиццу на улицу льва толстого, 16 на завтра'}, 'session': {'new': False, 'message_id': 4, 'session_id': '2eac4854-fce721f3-b845abba-20d60', 'skill_id': '3ad36498-f5rd-4079-a14b-788652932056', 'user_id': 'AC9WC3DF6FCE052E45A4566A48E6B7193774B84814CE49A922E163B8B29881DC'}, 'version': '1.0'}
+INFO:root:Response: {'session': {'new': False, 'message_id': 4, 'session_id': '2eac4854-fce721f3-b845abba-20d60', 'skill_id': '3ad36498-f5rd-4079-a14b-788652932056', 'user_id': 'AC9WC3DF6FCE052E45A4566A48E6B7193774B84814CE49A922E163B8B29881DC'}, 'version': '1.0', 'response': {'end_session': False, 'text': "Все говорят 'закажи пиццу на улицу льва толстого, 16 на завтра', а ты купи слона!", 'buttons': [{'title': 'Ладно', 'url': 'https://market.yandex.ru/search?text=слон', 'hide': True}]}}
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2025 21:39:40] "POST /post HTTP/1.1" 200 -
