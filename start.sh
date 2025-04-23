@@ -15,11 +15,11 @@ fi
 
 # Install pip into virtual environment
 if [ ! -f $VIRTUALENV/Scripts/pip.exe ]; then
-  curl --silent --show-error --retry 5 https://bootstrap.pypa.io/pip/3.7/get-pip.py | $VIRTUALENV/Scripts/python.exe
+  curl --silent --show-error --retry 5 $VIRTUALENV/Scripts/python.exe
 fi
 
 # Install the requirements
-pip3 install -r requirements.txt
+python3 -m pip install -r requirements.txt
 
 # Run your glorious application
 python3 server.py
