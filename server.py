@@ -1,5 +1,4 @@
 from flask import Flask, request, jsonify
-import os
 import logging
 
 
@@ -50,7 +49,7 @@ def handle_dialog(req, res):
 
     if req['request']['original_utterance'].lower() in answers:
         if sessionStorage[user_id]['stage'] == 0:
-            res['response']['text'] = 'Слона можно найти на Яндекс.Маркете!'
+            res['response']['text'] = 'Слона можно найти на Яндекс.Маркете!\nА ещё купите кролика!'
             sessionStorage[user_id] = {
                 'suggests': [
                     'Не хочу',
@@ -64,12 +63,12 @@ def handle_dialog(req, res):
             res['response']['text'] = 'Кролика можно найти на Яндекс.Маркете!'
             res['response']['end_session'] = True
             return
-    
-    if sessionStorage[user_id]['stage'] == 0:
-        res['response']['text'] = f"Все говорят '{req['request']['original_utterance']}', а ты купи слона!"
-    
-    elif sessionStorage[user_id]['stage'] == 1:
-        res['response']['text'] = f"Все говорят '{req['request']['original_utterance']}', а ты купи кролика!"
+    else:
+        if sessionStorage[user_id]['stage'] == 0:
+            res['response']['text'] = f"Все говорят '{req['request']['original_utterance']}', а ты купи слона!"
+        
+        elif sessionStorage[user_id]['stage'] == 1:
+            res['response']['text'] = f"Все говорят '{req['request']['original_utterance']}', а ты купи кролика!"
 
     res['response']['buttons'] = get_suggests(user_id)
 
