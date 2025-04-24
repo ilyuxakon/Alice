@@ -38,7 +38,8 @@ def handle_dialog(req, res):
                 'Не хочу',
                 'Не буду',
                 'Отстань'
-            ]
+            ],
+            'stage': 0
         }
 
         res['response']['text'] = 'Привет! Купи слона!'
@@ -48,11 +49,28 @@ def handle_dialog(req, res):
     answers = ['ладно', 'куплю', 'покупаю', 'хорошо', 'я покупаю', 'я куплю']
 
     if req['request']['original_utterance'].lower() in answers:
-        res['response']['text'] = 'Слона можно найти на Яндекс.Маркете!'
-        res['response']['end_session'] = True
-        return
+        if sessionStorage[user_id]['stage'] == 0:
+            res['response']['text'] = 'Слона можно найти на Яндекс.Маркете!'
+            sessionStorage[user_id] = {
+                'suggests': [
+                    'Не хочу',
+                    'Не буду',
+                    'Отстань'
+                ],
+                'stage': 1
+            }
+        
+        else:
+            res['response']['text'] = 'Кролика можно найти на Яндекс.Маркете!'
+            res['response']['end_session'] = True
+            return
     
-    res['response']['text'] = f"Все говорят '{req['request']['original_utterance']}', а ты купи слона!"
+    if sessionStorage[user_id]['stage'] == 0:
+        res['response']['text'] = f"Все говорят '{req['request']['original_utterance']}', а ты купи слона!"
+    
+    elif sessionStorage[user_id]['stage'] == 1:
+        res['response']['text'] = f"Все говорят '{req['request']['original_utterance']}', а ты купи кролика!"
+
     res['response']['buttons'] = get_suggests(user_id)
 
 
@@ -68,9 +86,11 @@ def get_suggests(user_id):
     sessionStorage[user_id] = session
 
     if len(suggests) < 2:
+        if session['stage'] == 0: url = 'https://market.yandex.ru/search?text=слон'
+        elif session['stage'] == 1: url ='https://market.yandex.ru/search?text=кролик'
         suggests.append({
             'title': 'Ладно',
-            'url': 'https://market.yandex.ru/search?text=слон',
+            'url': url,
             'hide': True
         })
 
