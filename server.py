@@ -45,7 +45,7 @@ def handle_dialog(req, res):
         res['response']['buttons'] = get_suggests(user_id)
         return
 
-    answers = ['ладно', 'куплю', 'покупаю', 'хорошо']
+    answers = ['ладно', 'куплю', 'покупаю', 'хорошо', 'я покупаю', 'я куплю']
 
     if req['request']['original_utterance'].lower() in answers:
         res['response']['text'] = 'Слона можно найти на Яндекс.Маркете!'
